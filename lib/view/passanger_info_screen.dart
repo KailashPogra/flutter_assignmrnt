@@ -315,6 +315,7 @@ class PassangerInfoScreen extends StatelessWidget {
                                     PassangerInfoModel value, Widget? child) {
                                   return MyTextField(
                                     enabled: passangerInfoModel.gstCheckBox,
+                                    fillColor: AppColor.textFieldColor,
                                   );
                                 },
                               ),
@@ -340,7 +341,7 @@ class PassangerInfoScreen extends StatelessWidget {
                             },
                           ),
                           Padding(
-                            padding: EdgeInsets.only(right: width / 27),
+                            padding: EdgeInsets.only(right: width / 26),
                             child: Text(
                               'FLIGHT',
                               textAlign: TextAlign.center,
@@ -361,6 +362,7 @@ class PassangerInfoScreen extends StatelessWidget {
                                     PassangerInfoModel value, Widget? child) {
                                   return MyTextField(
                                     enabled: passangerInfoModel.flightCheckBox,
+                                    fillColor: AppColor.textFieldColor,
                                   );
                                 },
                               ),

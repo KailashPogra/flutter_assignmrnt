@@ -9,8 +9,9 @@ class MyTextField extends StatelessWidget {
   final TextInputAction textInputAction;
   final Function(String)? onChanged;
   final Function(String)? onSubmitted;
-
+  final Color fillColor;
   MyTextField({
+    this.fillColor = Colors.white,
     this.labelText = "",
     this.obscureText = false,
     this.enabled = true,
@@ -33,7 +34,7 @@ class MyTextField extends StatelessWidget {
         onFieldSubmitted: onSubmitted,
         decoration: InputDecoration(
           filled: true, // Set to true to enable background color
-          fillColor: Colors.white, // Set your desired background color
+          fillColor: fillColor, // Set your desired background color
 
           hintText: labelText,
           hintStyle: const TextStyle(
